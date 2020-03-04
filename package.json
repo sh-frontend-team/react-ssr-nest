@@ -1,0 +1,48 @@
+{
+  "name": "react-ssr-nest",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon server/main.ts",
+    "prebuild": "rimraf dist",
+    "build": "tsc --project tsconfig.server.json",
+    "start": "cross-env NODE_ENV=production node dist/main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tellyourmad/react-ssr-nest.git"
+  },
+  "author": "Tellyourmad",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tellyourmad/react-ssr-nest/issues"
+  },
+  "homepage": "https://github.com/tellyourmad/react-ssr-nest#readme",
+  "dependencies": {
+    "@nestjs/common": "^6.11.8",
+    "@nestjs/core": "^6.11.8",
+    "@nestjs/platform-express": "^6.11.8",
+    "@react-ssr/core": "^0.20.0",
+    "@react-ssr/nestjs-express": "^0.20.0",
+    "@react-ssr/static": "^0.20.0",
+    "react": "^16.13.0",
+    "react-dom": "^16.13.0",
+    "react-router": "^5.1.2",
+    "react-router-dom": "^5.1.2",
+    "reflect-metadata": "^0.1.13",
+    "rxjs": "^6.5.4"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.3",
+    "@types/node": "^13.7.7",
+    "@types/react": "^16.9.23",
+    "@types/react-dom": "^16.9.5",
+    "@types/react-router-dom": "^5.1.3",
+    "cross-env": "^7.0.0",
+    "nodemon": "^2.0.2",
+    "rimraf": "^3.0.2",
+    "ts-node": "^8.6.2",
+    "typescript": "^3.8.3"
+  }
+}
